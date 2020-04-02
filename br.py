@@ -6,7 +6,7 @@ db_numbers = {}
 
 
 def send_message(message,rec):
-    client = Client("AC74b994c82cd3828c4ad9257fff440b1c", "e56dae188746693801abe43889432742")
+    client = Client("********", "*******")
     client.messages.create(to=rec, from_="+12029526477", body= message)
 
 
