@@ -68,3 +68,19 @@ def init_pop_db():
 ## Code after downloading ard py connection
 def getSequence():
     return "11111"
+
+
+if __name__ == "__main__":
+    # Blink both red and green led's thrice
+    print("Entering the programm...")
+    init_pop_db()
+    # Blink green led twice
+    print("Booted up")
+    while True:
+        seq = getSequence()
+        while seq != "10101":
+            seq = getSequence()
+            time.sleep(1)
+        send_message_v2()
+
+    
